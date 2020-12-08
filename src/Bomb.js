@@ -9,9 +9,10 @@ class Bomb extends Component {
     }
     render() {
         const remainingSeconds = this.state.secondsLeft;
+        const message = remainingSeconds !== 0 ? `${remainingSeconds} seconds left before I go boom!`: "Boom!";
         return (
             <div>
-                {remainingSeconds !== 0 ? `${remainingSeconds} seconds left before I go boom!`: "Boom!" }
+                { message }
             </div>
         )
     }

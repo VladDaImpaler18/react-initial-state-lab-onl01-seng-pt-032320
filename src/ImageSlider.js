@@ -13,9 +13,9 @@ class ImageSlider extends Component {
     render() {
         return (
             <div>
-                {`I am on slide ${this.state.currentSlideIndex}`}
+                <h1>I am on slide {this.state.currentSlideIndex}</h1>
             </div>
         )
     }
 }
-export default ImageSlider
+export default ImageSlider;
